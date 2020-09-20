@@ -2033,13 +2033,15 @@ do -- Example UI
 
 	do -- Elements
 		Tab:AddButton("Complete All Task", function()
-		wait()
-		loadstring(game:HttpGet(('https://pastebin.com/raw/cD3kpn3p'),true))()
+		for _,jjk in pairs(game.Workspace.Values.Tasks:GetChildren())do
+    game.ReplicatedStorage.Network.Interact:InvokeServer(jjk.Target.Value,true,100)
+end
 		end)
 		
 		Tab:AddButton("Open All Doors", function()
-		wait()
-		loadstring(game:HttpGet(('https://pastebin.com/raw/tRFk5Fxc'),true))()
+		for _,jjk in pairs(game.Workspace.Values.Tasks:GetChildren())do
+    game.ReplicatedStorage.Network.Interact:InvokeServer(jjk.Target.Value,true,100)
+end
 		end)
 		
 		local Switch = Tab:AddSwitch("Esp", function(bool)
