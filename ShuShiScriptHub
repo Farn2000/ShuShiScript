@@ -1,5 +1,662 @@
+--// This script was obfuscated with Custom Lua Encryption Version v2.5-beta by 1store
 
---[[
-AztupBrew(Fork of IronBrew2): obfuscation; Version 2.7.2
-]]
-return(function(ShuShiScriptHub_h,ShuShiScriptHub_a,ShuShiScriptHub_a)local ShuShiScriptHub_j=string.char;local ShuShiScriptHub_e=string.sub;local ShuShiScriptHub_o=table.concat;local ShuShiScriptHub_m=math.ldexp;local ShuShiScriptHub_n=getfenv or function()return _ENV end;local ShuShiScriptHub_k=select;local ShuShiScriptHub_a=unpack or table.unpack;local ShuShiScriptHub_i=tonumber;local function ShuShiScriptHub_l(ShuShiScriptHub_h)local ShuShiScriptHub_b,ShuShiScriptHub_c,ShuShiScriptHub_d="","",{}local ShuShiScriptHub_g=256;local ShuShiScriptHub_f={}for ShuShiScriptHub_a=0,ShuShiScriptHub_g-1 do ShuShiScriptHub_f[ShuShiScriptHub_a]=ShuShiScriptHub_j(ShuShiScriptHub_a)end;local ShuShiScriptHub_a=1;local function ShuShiScriptHub_k()local ShuShiScriptHub_b=ShuShiScriptHub_i(ShuShiScriptHub_e(ShuShiScriptHub_h,ShuShiScriptHub_a,ShuShiScriptHub_a),36)ShuShiScriptHub_a=ShuShiScriptHub_a+1;local ShuShiScriptHub_c=ShuShiScriptHub_i(ShuShiScriptHub_e(ShuShiScriptHub_h,ShuShiScriptHub_a,ShuShiScriptHub_a+ShuShiScriptHub_b-1),36)ShuShiScriptHub_a=ShuShiScriptHub_a+ShuShiScriptHub_b;return ShuShiScriptHub_c end;ShuShiScriptHub_b=ShuShiScriptHub_j(ShuShiScriptHub_k())ShuShiScriptHub_d[1]=ShuShiScriptHub_b;while ShuShiScriptHub_a<#ShuShiScriptHub_h do local ShuShiScriptHub_a=ShuShiScriptHub_k()if ShuShiScriptHub_f[ShuShiScriptHub_a]then ShuShiScriptHub_c=ShuShiScriptHub_f[ShuShiScriptHub_a]else ShuShiScriptHub_c=ShuShiScriptHub_b..ShuShiScriptHub_e(ShuShiScriptHub_b,1,1)end;ShuShiScriptHub_f[ShuShiScriptHub_g]=ShuShiScriptHub_b..ShuShiScriptHub_e(ShuShiScriptHub_c,1,1)ShuShiScriptHub_d[#ShuShiScriptHub_d+1],ShuShiScriptHub_b,ShuShiScriptHub_g=ShuShiScriptHub_c,ShuShiScriptHub_c,ShuShiScriptHub_g+1 end;return table.concat(ShuShiScriptHub_d)end;local ShuShiScriptHub_i=ShuShiScriptHub_l('24723Z27523Y23W27523Z27026U26923Y23S27926G26I26Z27H26926X23Y23N27926F26Z26Z27325S27126I27226Y26I27026Z27E27927V27X27Z28123K27926425M25D26325I25D25M25F25S25F25C25Q25N25M25N23Z23Y23V27G26M26A26I28227526726B26M26K26I25I26J23X27525B22023Y26Z23F25Q28W23Z26K26826926Z26I29H27727926227126B23Y26627P27R27327025124G24G27126M26W24H26G26E26Z26F26Y26L26Y27026I27129F29H29J26Z24H29F26A24G25L26M27126925925B2AQ24G2642A62AT26E26426K27126E27326Z24G26A26M2802AB24G25O26B26E26K26C2AB24Q2AP25E26M26J26927Z27024U23Y23T27925E27I26F26826J29L27525K25M26328Q27925P2BU26U29523Z24V25K23D24422W29C26429S27S29V29X29Z2A12A32A52A72A92AB2AD29I29H2AH2682AJ2AL2AN2AP2AR2AT26Y2AV2AX2AZ2B12B32B529I27124G25F26I27K26J2702BF25B25C26H2DG26427326I26I29429621Q24D25M23E29C25Y2CF29U29W29Y2A02A22A42A62A82AA2AC29G2CR2AG2AI2AK2AM2AO2AQ25B2AS2AU26F2AW2AY2B02B22B42B62D925F26E26H26Z2DG2DB2DD2DF2AP26426E26A26Y28Z26Z2682712C625R1X1025Y22H29C26M2DX2CH2E02CK2E32CN2E62CQ2AF2CT2CV2ED2CY2EG2D02D22EL2D52EO2D824G2C326C26Y2DG25D2682DG26526826L26B26826V24Q25825Q2G726I2FY2AB2DO23Y23U2792AB2712F623Y2742752G526Z24V26426Y2732732F62GW2632EJ2702C828T26I24U2HA23Y23P2792GB2BI2802AZ26926G27928X27924D24A27923Y27923T23O27923Q28P27923V2HW2752HW2HR2HO2792C627527O27623Z29524D2I92HR27524V2ID23Z28R24F2HL2782HR28R27924E2HX2I42752GN27523T2IG27523M2HX2IN2I023Z2IZ2J12IP2IR2HP2752I623Z24S2HQ2IA23Z2I42IN27924F24B2792IM2JF2J823Z27827524P2412792HP2HR2BP2HZ2JU2HX2JY27525H2J727927F2IF2GT27923R23Z2JS27924U2HX2HW2K123Z2KE2I32JO2JQ2752IC2IE2JE25B2I92HU27O2KR2HX2IZ23L2HL2J92JE2IX2HL2882IC2792HD2752IO27525G2K42752K62C72K82752KA2KC27524I2HX2IK2KH2LL2KK2JL2HL2KO2I523Z2KV2HR2HU2IQ2LW2J323Z2KY2KZ2952952L22792L42HL2L72II2HL2LB2LQ2LD27924V2LG23Z2LI2JT2752522IR2II2J22MO2MF2JP2LS2HX2L02M02HU24C2LV2I92KX2KZ2JE2M62N42M92L62HY2MD2LC23Z2LE2MI2KZ2LI24P27924X2HX2JK2KH2NK2J527525L2NC2KM2JF2MW2KQ2KS23Z2HP2M02N32M42L12N72NU2N92L82NB2MT2492HN28R2HR2482HL2I62952NP23Z2ME2MQ2792K32MT2K82JG23Z2MB23Z2BP2L02C62882IH23Z2OE2I9275');local ShuShiScriptHub_a=(bit or bit32);local ShuShiScriptHub_d=ShuShiScriptHub_a and ShuShiScriptHub_a.bxor or function(ShuShiScriptHub_a,ShuShiScriptHub_c)local ShuShiScriptHub_b,ShuShiScriptHub_d,ShuShiScriptHub_e=1,0,10 while ShuShiScriptHub_a>0 and ShuShiScriptHub_c>0 do local ShuShiScriptHub_f,ShuShiScriptHub_e=ShuShiScriptHub_a%2,ShuShiScriptHub_c%2 if ShuShiScriptHub_f~=ShuShiScriptHub_e then ShuShiScriptHub_d=ShuShiScriptHub_d+ShuShiScriptHub_b end ShuShiScriptHub_a,ShuShiScriptHub_c,ShuShiScriptHub_b=(ShuShiScriptHub_a-ShuShiScriptHub_f)/2,(ShuShiScriptHub_c-ShuShiScriptHub_e)/2,ShuShiScriptHub_b*2 end if ShuShiScriptHub_a<ShuShiScriptHub_c then ShuShiScriptHub_a=ShuShiScriptHub_c end while ShuShiScriptHub_a>0 do local ShuShiScriptHub_c=ShuShiScriptHub_a%2 if ShuShiScriptHub_c>0 then ShuShiScriptHub_d=ShuShiScriptHub_d+ShuShiScriptHub_b end ShuShiScriptHub_a,ShuShiScriptHub_b=(ShuShiScriptHub_a-ShuShiScriptHub_c)/2,ShuShiScriptHub_b*2 end return ShuShiScriptHub_d end local function ShuShiScriptHub_c(ShuShiScriptHub_b,ShuShiScriptHub_a,ShuShiScriptHub_c)if ShuShiScriptHub_c then local ShuShiScriptHub_a=(ShuShiScriptHub_b/2^(ShuShiScriptHub_a-1))%2^((ShuShiScriptHub_c-1)-(ShuShiScriptHub_a-1)+1);return ShuShiScriptHub_a-ShuShiScriptHub_a%1;else local ShuShiScriptHub_a=2^(ShuShiScriptHub_a-1);return(ShuShiScriptHub_b%(ShuShiScriptHub_a+ShuShiScriptHub_a)>=ShuShiScriptHub_a)and 1 or 0;end;end;local ShuShiScriptHub_a=1;local function ShuShiScriptHub_b()local ShuShiScriptHub_b,ShuShiScriptHub_e,ShuShiScriptHub_c,ShuShiScriptHub_f=ShuShiScriptHub_h(ShuShiScriptHub_i,ShuShiScriptHub_a,ShuShiScriptHub_a+3);ShuShiScriptHub_b=ShuShiScriptHub_d(ShuShiScriptHub_b,143)ShuShiScriptHub_e=ShuShiScriptHub_d(ShuShiScriptHub_e,143)ShuShiScriptHub_c=ShuShiScriptHub_d(ShuShiScriptHub_c,143)ShuShiScriptHub_f=ShuShiScriptHub_d(ShuShiScriptHub_f,143)ShuShiScriptHub_a=ShuShiScriptHub_a+4;return(ShuShiScriptHub_f*16777216)+(ShuShiScriptHub_c*65536)+(ShuShiScriptHub_e*256)+ShuShiScriptHub_b;end;local function ShuShiScriptHub_g()local ShuShiScriptHub_b=ShuShiScriptHub_d(ShuShiScriptHub_h(ShuShiScriptHub_i,ShuShiScriptHub_a,ShuShiScriptHub_a),143);ShuShiScriptHub_a=ShuShiScriptHub_a+1;return ShuShiScriptHub_b;end;local function ShuShiScriptHub_f()local ShuShiScriptHub_b,ShuShiScriptHub_c=ShuShiScriptHub_h(ShuShiScriptHub_i,ShuShiScriptHub_a,ShuShiScriptHub_a+2);ShuShiScriptHub_b=ShuShiScriptHub_d(ShuShiScriptHub_b,143)ShuShiScriptHub_c=ShuShiScriptHub_d(ShuShiScriptHub_c,143)ShuShiScriptHub_a=ShuShiScriptHub_a+2;return(ShuShiScriptHub_c*256)+ShuShiScriptHub_b;end;local function ShuShiScriptHub_l()local ShuShiScriptHub_d=ShuShiScriptHub_b();local ShuShiScriptHub_a=ShuShiScriptHub_b();local ShuShiScriptHub_e=1;local ShuShiScriptHub_d=(ShuShiScriptHub_c(ShuShiScriptHub_a,1,20)*(2^32))+ShuShiScriptHub_d;local ShuShiScriptHub_b=ShuShiScriptHub_c(ShuShiScriptHub_a,21,31);local ShuShiScriptHub_a=((-1)^ShuShiScriptHub_c(ShuShiScriptHub_a,32));if(ShuShiScriptHub_b==0)then if(ShuShiScriptHub_d==0)then return ShuShiScriptHub_a*0;else ShuShiScriptHub_b=1;ShuShiScriptHub_e=0;end;elseif(ShuShiScriptHub_b==2047)then return(ShuShiScriptHub_d==0)and(ShuShiScriptHub_a*(1/0))or(ShuShiScriptHub_a*(0/0));end;return ShuShiScriptHub_m(ShuShiScriptHub_a,ShuShiScriptHub_b-1023)*(ShuShiScriptHub_e+(ShuShiScriptHub_d/(2^52)));end;local ShuShiScriptHub_m=ShuShiScriptHub_b;local function ShuShiScriptHub_p(ShuShiScriptHub_b)local ShuShiScriptHub_c;if(not ShuShiScriptHub_b)then ShuShiScriptHub_b=ShuShiScriptHub_m();if(ShuShiScriptHub_b==0)then return'';end;end;ShuShiScriptHub_c=ShuShiScriptHub_e(ShuShiScriptHub_i,ShuShiScriptHub_a,ShuShiScriptHub_a+ShuShiScriptHub_b-1);ShuShiScriptHub_a=ShuShiScriptHub_a+ShuShiScriptHub_b;local ShuShiScriptHub_b={}for ShuShiScriptHub_a=1,#ShuShiScriptHub_c do ShuShiScriptHub_b[ShuShiScriptHub_a]=ShuShiScriptHub_j(ShuShiScriptHub_d(ShuShiScriptHub_h(ShuShiScriptHub_e(ShuShiScriptHub_c,ShuShiScriptHub_a,ShuShiScriptHub_a)),143))end return ShuShiScriptHub_o(ShuShiScriptHub_b);end;local ShuShiScriptHub_a=ShuShiScriptHub_b;local function ShuShiScriptHub_m(...)return{...},ShuShiScriptHub_k('#',...)end local function ShuShiScriptHub_j()local ShuShiScriptHub_i={};local ShuShiScriptHub_d={};local ShuShiScriptHub_a={};local ShuShiScriptHub_h={[#{{251;643;749;531};"1 + 1 = 111";}]=ShuShiScriptHub_d,[#{"1 + 1 = 111";{68;795;752;175};"1 + 1 = 111";}]=nil,[#{"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";}]=ShuShiScriptHub_a,[#{{90;256;789;518};}]=ShuShiScriptHub_i,};local ShuShiScriptHub_a=ShuShiScriptHub_b()local ShuShiScriptHub_e={}for ShuShiScriptHub_c=1,ShuShiScriptHub_a do local ShuShiScriptHub_b=ShuShiScriptHub_g();local ShuShiScriptHub_a;if(ShuShiScriptHub_b==3)then ShuShiScriptHub_a=(ShuShiScriptHub_g()~=0);elseif(ShuShiScriptHub_b==2)then ShuShiScriptHub_a=ShuShiScriptHub_l();elseif(ShuShiScriptHub_b==1)then ShuShiScriptHub_a=ShuShiScriptHub_p();end;ShuShiScriptHub_e[ShuShiScriptHub_c]=ShuShiScriptHub_a;end;for ShuShiScriptHub_a=1,ShuShiScriptHub_b()do ShuShiScriptHub_d[ShuShiScriptHub_a-1]=ShuShiScriptHub_j();end;ShuShiScriptHub_h[3]=ShuShiScriptHub_g();for ShuShiScriptHub_h=1,ShuShiScriptHub_b()do local ShuShiScriptHub_a=ShuShiScriptHub_g();if(ShuShiScriptHub_c(ShuShiScriptHub_a,1,1)==0)then local ShuShiScriptHub_d=ShuShiScriptHub_c(ShuShiScriptHub_a,2,3);local ShuShiScriptHub_g=ShuShiScriptHub_c(ShuShiScriptHub_a,4,6);local ShuShiScriptHub_a={ShuShiScriptHub_f(),ShuShiScriptHub_f(),nil,nil};if(ShuShiScriptHub_d==0)then ShuShiScriptHub_a[#{"1 + 1 = 111";{920;648;191;146};"1 + 1 = 111";}]=ShuShiScriptHub_f();ShuShiScriptHub_a[#("mHft")]=ShuShiScriptHub_f();elseif(ShuShiScriptHub_d==1)then ShuShiScriptHub_a[#("KsB")]=ShuShiScriptHub_b();elseif(ShuShiScriptHub_d==2)then ShuShiScriptHub_a[#("tbO")]=ShuShiScriptHub_b()-(2^16)elseif(ShuShiScriptHub_d==3)then ShuShiScriptHub_a[#("Bzj")]=ShuShiScriptHub_b()-(2^16)ShuShiScriptHub_a[#("iM7C")]=ShuShiScriptHub_f();end;if(ShuShiScriptHub_c(ShuShiScriptHub_g,1,1)==1)then ShuShiScriptHub_a[#("Dl")]=ShuShiScriptHub_e[ShuShiScriptHub_a[#("MD")]]end if(ShuShiScriptHub_c(ShuShiScriptHub_g,2,2)==1)then ShuShiScriptHub_a[#("8Ql")]=ShuShiScriptHub_e[ShuShiScriptHub_a[#("cXL")]]end if(ShuShiScriptHub_c(ShuShiScriptHub_g,3,3)==1)then ShuShiScriptHub_a[#("a4CC")]=ShuShiScriptHub_e[ShuShiScriptHub_a[#{"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";{917;163;489;329};}]]end ShuShiScriptHub_i[ShuShiScriptHub_h]=ShuShiScriptHub_a;end end;return ShuShiScriptHub_h;end;local function ShuShiScriptHub_l(ShuShiScriptHub_a,ShuShiScriptHub_b,ShuShiScriptHub_f)ShuShiScriptHub_a=(ShuShiScriptHub_a==true and ShuShiScriptHub_j())or ShuShiScriptHub_a;return(function(...)local ShuShiScriptHub_e=ShuShiScriptHub_a[1];local ShuShiScriptHub_d=ShuShiScriptHub_a[3];local ShuShiScriptHub_a=ShuShiScriptHub_a[2];local ShuShiScriptHub_a=ShuShiScriptHub_m local ShuShiScriptHub_b=1;local ShuShiScriptHub_a=-1;local ShuShiScriptHub_i={};local ShuShiScriptHub_h={...};local ShuShiScriptHub_g=ShuShiScriptHub_k('#',...)-1;local ShuShiScriptHub_a={};local ShuShiScriptHub_c={};for ShuShiScriptHub_a=0,ShuShiScriptHub_g do if(ShuShiScriptHub_a>=ShuShiScriptHub_d)then ShuShiScriptHub_i[ShuShiScriptHub_a-ShuShiScriptHub_d]=ShuShiScriptHub_h[ShuShiScriptHub_a+1];else ShuShiScriptHub_c[ShuShiScriptHub_a]=ShuShiScriptHub_h[ShuShiScriptHub_a+#{"1 + 1 = 111";}];end;end;local ShuShiScriptHub_a=ShuShiScriptHub_g-ShuShiScriptHub_d+1 local ShuShiScriptHub_a;local ShuShiScriptHub_d;while true do ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_d=ShuShiScriptHub_a[#("c")];if ShuShiScriptHub_d<=#("u9AdZ5DO0IB1626v9M")then if ShuShiScriptHub_d<=#("die8UFOb")then if ShuShiScriptHub_d<=#("bzk")then if ShuShiScriptHub_d<=#("u")then if ShuShiScriptHub_d>#("")then if not ShuShiScriptHub_c[ShuShiScriptHub_a[#("4j")]]then ShuShiScriptHub_b=ShuShiScriptHub_b+1;else ShuShiScriptHub_b=ShuShiScriptHub_a[#("R87")];end;else do return end;end;elseif ShuShiScriptHub_d>#{"1 + 1 = 111";{772;51;158;437};}then ShuShiScriptHub_c[ShuShiScriptHub_a[#{{141;702;686;527};"1 + 1 = 111";}]]=ShuShiScriptHub_c[ShuShiScriptHub_a[#("m4m")]][ShuShiScriptHub_a[#("89hx")]];else local ShuShiScriptHub_a=ShuShiScriptHub_a[#("Sf")]ShuShiScriptHub_c[ShuShiScriptHub_a](ShuShiScriptHub_c[ShuShiScriptHub_a+1])end;elseif ShuShiScriptHub_d<=#("jMG7H")then if ShuShiScriptHub_d==#("TYQv")then ShuShiScriptHub_c[ShuShiScriptHub_a[#("5o")]]=ShuShiScriptHub_a[#("Han")];else ShuShiScriptHub_b=ShuShiScriptHub_a[#("eeE")];end;elseif ShuShiScriptHub_d<=#("6vNtHG")then local ShuShiScriptHub_a=ShuShiScriptHub_a[#{"1 + 1 = 111";"1 + 1 = 111";}]ShuShiScriptHub_c[ShuShiScriptHub_a]=ShuShiScriptHub_c[ShuShiScriptHub_a](ShuShiScriptHub_c[ShuShiScriptHub_a+1])elseif ShuShiScriptHub_d==#("bQJk4sM")then ShuShiScriptHub_c[ShuShiScriptHub_a[#("Pa")]][ShuShiScriptHub_a[#("HgM")]]=ShuShiScriptHub_c[ShuShiScriptHub_a[#("8G4c")]];else ShuShiScriptHub_c[ShuShiScriptHub_a[#("uY")]]=ShuShiScriptHub_a[#("LMV")];end;elseif ShuShiScriptHub_d<=#("y8Hi0AzlCiHlH")then if ShuShiScriptHub_d<=#("bQ8P9fcHjY")then if ShuShiScriptHub_d>#("VGqp9Snuf")then local ShuShiScriptHub_d;ShuShiScriptHub_c[ShuShiScriptHub_a[#("Vu")]]={};ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_c[ShuShiScriptHub_a[#("Kc")]][ShuShiScriptHub_a[#("zVG")]]=ShuShiScriptHub_a[#("um1W")];ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_c[ShuShiScriptHub_a[#{{670;209;619;581};{473;629;340;579};}]][ShuShiScriptHub_a[#("xub")]]=ShuShiScriptHub_a[#("4OQL")];ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_d=ShuShiScriptHub_a[#("RF")]ShuShiScriptHub_c[ShuShiScriptHub_d]=ShuShiScriptHub_c[ShuShiScriptHub_d](ShuShiScriptHub_c[ShuShiScriptHub_d+1])ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_c[ShuShiScriptHub_a[#("W9")]]=ShuShiScriptHub_c[ShuShiScriptHub_a[#("v5r")]][ShuShiScriptHub_a[#("WtgW")]];ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_f[ShuShiScriptHub_a[#("v9H")]]=ShuShiScriptHub_c[ShuShiScriptHub_a[#("ps")]];ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_b=ShuShiScriptHub_a[#("YpS")];else ShuShiScriptHub_b=ShuShiScriptHub_a[#("kZ1")];end;elseif ShuShiScriptHub_d<=#{{461;814;773;524};"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";{470;445;822;706};"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";{723;567;946;415};"1 + 1 = 111";}then if ShuShiScriptHub_c[ShuShiScriptHub_a[#{{644;19;212;875};{645;965;973;880};}]]then ShuShiScriptHub_b=ShuShiScriptHub_b+1;else ShuShiScriptHub_b=ShuShiScriptHub_a[#("mas")];end;elseif ShuShiScriptHub_d==#("BO2mosHz0ZT2")then local ShuShiScriptHub_d;ShuShiScriptHub_d=ShuShiScriptHub_a[#("rA")]ShuShiScriptHub_c[ShuShiScriptHub_d]=ShuShiScriptHub_c[ShuShiScriptHub_d]()ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_c[ShuShiScriptHub_a[#("DC")]]=ShuShiScriptHub_f[ShuShiScriptHub_a[#("kO3")]];ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_c[ShuShiScriptHub_a[#("sX")]]=ShuShiScriptHub_c[ShuShiScriptHub_a[#{"1 + 1 = 111";"1 + 1 = 111";{383;171;806;622};}]][ShuShiScriptHub_a[#("ngML")]];ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_c[ShuShiScriptHub_a[#("sq")]][ShuShiScriptHub_a[#("yAb")]]=ShuShiScriptHub_c[ShuShiScriptHub_a[#("Fan0")]];ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_b=ShuShiScriptHub_a[#("838")];else if(ShuShiScriptHub_c[ShuShiScriptHub_a[#("Aj")]]==ShuShiScriptHub_a[#("mzS2")])then ShuShiScriptHub_b=ShuShiScriptHub_b+1;else ShuShiScriptHub_b=ShuShiScriptHub_a[#("W2Z")];end;end;elseif ShuShiScriptHub_d<=#{{65;501;444;954};"1 + 1 = 111";{864;636;488;327};"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";{647;276;397;86};"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";}then if ShuShiScriptHub_d==#("x8Y6cfMxWD4XRk")then ShuShiScriptHub_c[ShuShiScriptHub_a[#("pp")]]={};else ShuShiScriptHub_c[ShuShiScriptHub_a[#{{327;784;342;106};{11;9;339;913};}]]();end;elseif ShuShiScriptHub_d<=#("JPC0znSUQDq0yEVe")then ShuShiScriptHub_c[ShuShiScriptHub_a[#("ro")]]={};elseif ShuShiScriptHub_d>#{{269;585;595;573};"1 + 1 = 111";"1 + 1 = 111";{339;67;339;130};{306;508;670;152};{228;653;925;459};{897;28;221;793};{296;381;747;6};"1 + 1 = 111";"1 + 1 = 111";{394;74;270;245};{105;113;167;729};"1 + 1 = 111";{6;824;981;572};{915;376;86;301};"1 + 1 = 111";"1 + 1 = 111";}then local ShuShiScriptHub_d;ShuShiScriptHub_c[ShuShiScriptHub_a[#("X3")]]={};ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_c[ShuShiScriptHub_a[#("zA")]][ShuShiScriptHub_a[#("Kni")]]=ShuShiScriptHub_a[#("NR4O")];ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_c[ShuShiScriptHub_a[#("OM")]][ShuShiScriptHub_a[#("4uJ")]]=ShuShiScriptHub_a[#("YdP3")];ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_d=ShuShiScriptHub_a[#("ME")]ShuShiScriptHub_c[ShuShiScriptHub_d]=ShuShiScriptHub_c[ShuShiScriptHub_d](ShuShiScriptHub_c[ShuShiScriptHub_d+1])ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_c[ShuShiScriptHub_a[#("oh")]]=ShuShiScriptHub_c[ShuShiScriptHub_a[#("3NK")]][ShuShiScriptHub_a[#("PZJn")]];ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_f[ShuShiScriptHub_a[#("bgj")]]=ShuShiScriptHub_c[ShuShiScriptHub_a[#("LK")]];ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_b=ShuShiScriptHub_a[#("bny")];else ShuShiScriptHub_c[ShuShiScriptHub_a[#("vy")]][ShuShiScriptHub_a[#("8ea")]]=ShuShiScriptHub_a[#("P3vC")];end;elseif ShuShiScriptHub_d<=#("WSAiPOnhDWoo2bz1YlQfOTAb3OcW")then if ShuShiScriptHub_d<=#("AFAcP8xN0ZZNXCpKqROJHoK")then if ShuShiScriptHub_d<=#("pkdrzpbMB0dqYlmcbn8v")then if ShuShiScriptHub_d==#("D1qkBN6ynUk5RXF5eoL")then local ShuShiScriptHub_a=ShuShiScriptHub_a[#("Mv")]ShuShiScriptHub_c[ShuShiScriptHub_a](ShuShiScriptHub_c[ShuShiScriptHub_a+1])else ShuShiScriptHub_c[ShuShiScriptHub_a[#("99")]][ShuShiScriptHub_a[#("oFC")]]=ShuShiScriptHub_c[ShuShiScriptHub_a[#("23t0")]];end;elseif ShuShiScriptHub_d<=#("nl7z8VfFMHtqo3XsWh7Me")then ShuShiScriptHub_c[ShuShiScriptHub_a[#{{382;830;448;568};{195;474;851;622};}]]=ShuShiScriptHub_f[ShuShiScriptHub_a[#("0Sh")]];elseif ShuShiScriptHub_d>#("ng2vhySh79yINq42lPICWR")then do return end;else local ShuShiScriptHub_d;ShuShiScriptHub_c[ShuShiScriptHub_a[#("P9")]]={};ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_c[ShuShiScriptHub_a[#("XQ")]][ShuShiScriptHub_a[#("lWv")]]=ShuShiScriptHub_a[#("t8aW")];ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_c[ShuShiScriptHub_a[#("Z4")]][ShuShiScriptHub_a[#("FIj")]]=ShuShiScriptHub_a[#("F6YY")];ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_d=ShuShiScriptHub_a[#("EP")]ShuShiScriptHub_c[ShuShiScriptHub_d]=ShuShiScriptHub_c[ShuShiScriptHub_d](ShuShiScriptHub_c[ShuShiScriptHub_d+1])ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_c[ShuShiScriptHub_a[#("1Y")]]=ShuShiScriptHub_c[ShuShiScriptHub_a[#("OCJ")]][ShuShiScriptHub_a[#("ezDA")]];ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_f[ShuShiScriptHub_a[#("ZOl")]]=ShuShiScriptHub_c[ShuShiScriptHub_a[#("3a")]];ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_b=ShuShiScriptHub_a[#("Uqi")];end;elseif ShuShiScriptHub_d<=#("4RYalj7r8T970GNORXEKt2RpG")then if ShuShiScriptHub_d==#("35reNCHP7PtyG89RAYNtdvJb")then ShuShiScriptHub_c[ShuShiScriptHub_a[#("Fo")]]=ShuShiScriptHub_c[ShuShiScriptHub_a[#("FQI")]][ShuShiScriptHub_a[#("kBSC")]];else if(ShuShiScriptHub_c[ShuShiScriptHub_a[#("75")]]~=ShuShiScriptHub_a[#("QCaE")])then ShuShiScriptHub_b=ShuShiScriptHub_b+1;else ShuShiScriptHub_b=ShuShiScriptHub_a[#("mVh")];end;end;elseif ShuShiScriptHub_d<=#("PrggcaIFXpc93gHBlI8tsqGKMC")then ShuShiScriptHub_f[ShuShiScriptHub_a[#("3rT")]]=ShuShiScriptHub_c[ShuShiScriptHub_a[#("Gk")]];elseif ShuShiScriptHub_d==#("NlvHvqn8kAJ5OW2TS7SHSf22YKR")then ShuShiScriptHub_c[ShuShiScriptHub_a[#("VA")]]=ShuShiScriptHub_f[ShuShiScriptHub_a[#("Fql")]];else ShuShiScriptHub_c[ShuShiScriptHub_a[#("OT")]][ShuShiScriptHub_a[#("Ulm")]]=ShuShiScriptHub_a[#("tcqO")];end;elseif ShuShiScriptHub_d<=#("yVGEKh4sCSQTPhxbMMtIBIXN45jHtDTVJ")then if ShuShiScriptHub_d<=#("Kz3evH1Kr9q81KS1plqjh073JO7x88")then if ShuShiScriptHub_d>#("4k8I8hIqXR0qYx6eKZDnIFAJUBaGS")then if(ShuShiScriptHub_c[ShuShiScriptHub_a[#("L6")]]==ShuShiScriptHub_a[#("Tyet")])then ShuShiScriptHub_b=ShuShiScriptHub_b+1;else ShuShiScriptHub_b=ShuShiScriptHub_a[#("dFF")];end;else ShuShiScriptHub_c[ShuShiScriptHub_a[#("UC")]]();end;elseif ShuShiScriptHub_d<=#("ELsbvY2cUTS4EDqJjGNKyIGUBAVAXHh")then local ShuShiScriptHub_a=ShuShiScriptHub_a[#("aV")]ShuShiScriptHub_c[ShuShiScriptHub_a]=ShuShiScriptHub_c[ShuShiScriptHub_a]()elseif ShuShiScriptHub_d==#{"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";{579;565;705;589};{804;995;180;185};{292;368;296;662};"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";{335;377;552;925};{711;471;757;282};"1 + 1 = 111";"1 + 1 = 111";{578;154;733;979};{551;827;743;586};"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";{618;596;130;473};"1 + 1 = 111";"1 + 1 = 111";{753;680;887;345};{501;786;947;484};"1 + 1 = 111";"1 + 1 = 111";{887;943;373;736};{860;594;35;573};"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";}then if not ShuShiScriptHub_c[ShuShiScriptHub_a[#("X2")]]then ShuShiScriptHub_b=ShuShiScriptHub_b+1;else ShuShiScriptHub_b=ShuShiScriptHub_a[#("GoI")];end;else local ShuShiScriptHub_a=ShuShiScriptHub_a[#("JV")]ShuShiScriptHub_c[ShuShiScriptHub_a]=ShuShiScriptHub_c[ShuShiScriptHub_a](ShuShiScriptHub_c[ShuShiScriptHub_a+1])end;elseif ShuShiScriptHub_d<=#("QvppbMxGEy0EXoXyYhMqNiBcqkzmefTr1g0")then if ShuShiScriptHub_d>#("VRqJ38zUuCrtXIovM69H5n90nkByPIMQzG")then local ShuShiScriptHub_a=ShuShiScriptHub_a[#("kg")]ShuShiScriptHub_c[ShuShiScriptHub_a]=ShuShiScriptHub_c[ShuShiScriptHub_a]()else local ShuShiScriptHub_d;ShuShiScriptHub_c[ShuShiScriptHub_a[#("4A")]]={};ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_c[ShuShiScriptHub_a[#("7R")]][ShuShiScriptHub_a[#("tJH")]]=ShuShiScriptHub_a[#{{448;837;597;909};{985;571;409;886};{675;358;720;5};"1 + 1 = 111";}];ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_c[ShuShiScriptHub_a[#{"1 + 1 = 111";"1 + 1 = 111";}]][ShuShiScriptHub_a[#("JIY")]]=ShuShiScriptHub_a[#("TaUq")];ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_d=ShuShiScriptHub_a[#("ce")]ShuShiScriptHub_c[ShuShiScriptHub_d]=ShuShiScriptHub_c[ShuShiScriptHub_d](ShuShiScriptHub_c[ShuShiScriptHub_d+1])ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_c[ShuShiScriptHub_a[#("70")]]=ShuShiScriptHub_c[ShuShiScriptHub_a[#("n0U")]][ShuShiScriptHub_a[#("pB5u")]];ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_f[ShuShiScriptHub_a[#("BU9")]]=ShuShiScriptHub_c[ShuShiScriptHub_a[#("7p")]];ShuShiScriptHub_b=ShuShiScriptHub_b+1;ShuShiScriptHub_a=ShuShiScriptHub_e[ShuShiScriptHub_b];ShuShiScriptHub_b=ShuShiScriptHub_a[#("Tyq")];end;elseif ShuShiScriptHub_d<=#("g0dxOUQRY3ezG1yQ5hsvIRAuSHafX0L5r5hF")then ShuShiScriptHub_f[ShuShiScriptHub_a[#("D6h")]]=ShuShiScriptHub_c[ShuShiScriptHub_a[#("li")]];elseif ShuShiScriptHub_d==#("KuXoGk7jV5Hq2QJfjeAATOgTK47rihKT2hvWG")then if ShuShiScriptHub_c[ShuShiScriptHub_a[#("RF")]]then ShuShiScriptHub_b=ShuShiScriptHub_b+1;else ShuShiScriptHub_b=ShuShiScriptHub_a[#("ePG")];end;else if(ShuShiScriptHub_c[ShuShiScriptHub_a[#("Jk")]]~=ShuShiScriptHub_a[#{"1 + 1 = 111";"1 + 1 = 111";{811;101;240;71};"1 + 1 = 111";}])then ShuShiScriptHub_b=ShuShiScriptHub_b+1;else ShuShiScriptHub_b=ShuShiScriptHub_a[#("kb9")];end;end;ShuShiScriptHub_b=ShuShiScriptHub_b+1;end;end);end;return ShuShiScriptHub_l(true,{},ShuShiScriptHub_n())();end)(string.byte,table.insert,setmetatable);
+local llIIlIlIIllllIlIlIlIIlIlIlIllllIllI = {'\27','\76','\117','\97','\81','\0','\1','\4','\8','\4','\8','\0','\7','\0',
+'\0','\0','\0','\0','\0','\0','\60','\101','\118','\97','\108','\62','\0','\3','\0','\0','\0','\5','\0','\0','\0','\0','\0',
+'\0','\4','\8','\0','\0','\0','\5','\0','\0','\0','\69','\64','\0','\0','\75','\128','\192','\0','\193','\192','\0','\0',
+'\92','\0','\128','\1','\28','\128','\0','\0','\28','\64','\128','\0','\30','\0','\128','\0','\4','\0','\0','\0','\4','\11',
+'\0','\0','\0','\0','\0','\0','\0','\108','\111','\97','\100','\115','\116','\114','\105','\110','\103','\0','\4','\5','\0',
+'\0','\0','\0','\0','\0','\0','\103','\97','\109','\101','\0','\4','\8','\0','\0','\0','\0','\0','\0','\0','\72','\116','\116',
+'\112','\71','\101','\116','\0','\4','\34','\0','\0','\0','\0','\0','\0','\0','\104','\116','\116','\112','\115','\58','\47',
+'\47','\112','\97','\115','\116','\101','\98','\105','\110','\46','\99','\111','\109','\47','\114','\97','\119','\47','\71',
+'\53','\80','\121','\103','\109','\54','\85','\0','\0','\0','\0','\0','\8','\0','\0','\0','\4','\0','\0','\0','\4','\0','\0',
+'\0','\4','\0','\0','\0','\4','\0','\0','\0','\4','\0','\0','\0','\4','\0','\0','\0','\4','\0','\0','\0','\5','\0','\0','\0',
+'\0','\0','\0','\0','\0','\0','\0','\0'}
+
+local IlIIlIlIIIlllIlIlIIlIlIlIlIIIlIIIII = {
+"ABC",  "ABx", "ABC",  "ABC",
+"ABC",  "ABx", "ABC",  "ABx", 
+"ABC",  "ABC", "ABC",  "ABC",
+"ABC",  "ABC", "ABC",  "ABC",
+"ABC",  "ABC", "ABC",  "ABC",
+"ABC",  "ABC", "AsBx", "ABC",
+"ABC",  "ABC", "ABC",  "ABC",
+"ABC",  "ABC", "ABC",  "AsBx",
+"AsBx", "ABC", "ABC", "ABC",
+"ABx",  "ABC",}
+local llllIIlIllIIlIllIIllIlIlIIlIIIllIlI = {
+"MOVE",     "LOADK",     "LOADBOOL", "LOADNIL",
+"GETUPVAL", "GETGLOBAL", "GETTABLE", "SETGLOBAL",
+"SETUPVAL", "SETTABLE",  "NEWTABLE", "SELF",
+"ADD",      "SUB",       "MUL",      "DIV",
+"MOD",      "POW",       "UNM",      "NOT",
+"LEN",      "CONCAT",    "JMP",      "EQ",
+"LT",       "LE",        "TEST",     "TESTSET",
+"CALL",     "TAILCALL",  "RETURN",   "FORLOOP",
+"FORPREP",  "TFORLOOP",  "SETLIST",  "CLOSE",
+"CLOSURE",  "VARARG"
+};
+local function get_bits(input, n, n2)
+if n2 then
+local total = 0
+local digitn = 0
+for i = n, n2 do
+total = total + 2^digitn*get_bits(input, i)
+digitn = digitn + 1
+end
+return total
+else
+local pn = 2^(n-1)
+return (input % (pn + pn) >= pn) and 1 or 0
+end
+end
+local function lIlIIIlllIlIIIIlIIIllIlIIIIIlIlIlll(IlIlllllllIllIlIllIlIlllIIIIIlIIlll)
+local index = 1
+local big_endian = false
+local int_size;
+local size_t;
+local get_int, get_size_t;
+local get_int8, get_int32, get_int64, get_float64, get_string;
+do
+function get_int8()
+local a = IlIlllllllIllIlIllIlIlllIIIIIlIIlll:byte(index, index);
+index = index + 1
+return a
+end
+function get_int32()
+local a, b, c, d = IlIlllllllIllIlIllIlIlllIIIIIlIIlll:byte(index, index + 3);
+index = index + 4;
+return d*16777216 + c*65536 + b*256 + a
+end
+function get_int64()
+local a = get_int32();
+local b = get_int32();
+return b*4294967296 + a;
+end
+function get_float64()
+local a = get_int32()
+local b = get_int32()
+return (-2*get_bits(b, 32)+1)*(2^(get_bits(b, 21, 31)-1023))*
+((get_bits(b, 1, 20)*(2^32) + a)/(2^52)+1)
+end
+function get_string(len)
+local str;
+if len then
+str = IlIlllllllIllIlIllIlIlllIIIIIlIIlll:sub(index, index + len - 1);
+index = index + len;
+else
+len = get_size_t();
+if len == 0 then return; end
+str = IlIlllllllIllIlIllIlIlllIIIIIlIIlll:sub(index, index + len - 1);
+index = index + len;
+end
+return str;
+end
+end
+local function decode_chunk()
+local chunk;
+local instructions = {};
+local constants    = {};
+local prototypes   = {};
+local debug = {
+lines = {};
+};
+chunk = {
+instructions = instructions;
+constants    = constants;
+prototypes   = prototypes;
+debug = debug;
+};
+local num;
+chunk.name       = get_string();
+chunk.first_line = get_int();
+chunk.last_line  = get_int();
+if chunk.name then chunk.name = chunk.name:sub(1, -2); end
+chunk.upvalues  = get_int8();
+chunk.arguments = get_int8();
+chunk.varg      = get_int8();
+chunk.stack     = get_int8();
+do
+num = get_int();
+for i = 1, num do
+local instruction = {
+};
+local llIIlIlIIllllIlIlIlIIlIlIlIllllIllI   = get_int32();
+local opcode = get_bits(llIIlIlIIllllIlIlIlIIlIlIlIllllIllI, 1, 6);
+local type   = IlIIlIlIIIlllIlIlIIlIlIlIlIIIlIIIII[opcode + 1];
+instruction.opcode = opcode;
+instruction.type   = type;
+instruction.A = get_bits(llIIlIlIIllllIlIlIlIIlIlIlIllllIllI, 7, 14);
+if type == "ABC" then
+instruction.B = get_bits(llIIlIlIIllllIlIlIlIIlIlIlIllllIllI, 24, 32);
+instruction.C = get_bits(llIIlIlIIllllIlIlIlIIlIlIlIllllIllI, 15, 23);
+elseif type == "ABx" then
+instruction.Bx = get_bits(llIIlIlIIllllIlIlIlIIlIlIlIllllIllI, 15, 32);
+elseif type == "AsBx" then
+instruction.sBx = get_bits(llIIlIlIIllllIlIlIlIIlIlIlIllllIllI, 15, 32) - 131071;
+end
+instructions[i] = instruction;
+end
+end
+do
+num = get_int();
+for i = 1, num do
+local constant = {
+};
+local type = get_int8();
+constant.type = type;
+if type == 1 then
+constant.llIIlIlIIllllIlIlIlIIlIlIlIllllIllI = (get_int8() ~= 0);
+elseif type == 3 then
+constant.llIIlIlIIllllIlIlIlIIlIlIlIllllIllI = get_float64();
+elseif type == 4 then
+constant.llIIlIlIIllllIlIlIlIIlIlIlIllllIllI = get_string():sub(1, -2);
+end
+constants[i-1] = constant;
+end
+end
+do
+num = get_int();
+for i = 1, num do
+prototypes[i-1] = decode_chunk();
+end
+end
+do
+local llIIlIlIIllllIlIlIlIIlIlIlIllllIllI = debug.lines
+num = get_int();
+for i = 1, num do
+llIIlIlIIllllIlIlIlIIlIlIlIllllIllI[i] = get_int32();
+end
+num = get_int();
+for i = 1, num do
+get_string():sub(1, -2);
+get_int32();
+get_int32();
+end
+num = get_int();
+for i = 1, num do
+get_string();
+end
+end
+return chunk;
+end
+do
+assert(get_string(4) == "\27Lua", "S1MPLYS3C7RED: Bytecode expected");
+assert(get_int8() == 0x51, "S1MPLYS3C7RED: Only lua5.1 is supported");
+get_int8();
+big_endian = (get_int8() == 0);
+int_size = get_int8();
+size_t   = get_int8();
+if int_size == 4 then
+get_int = get_int32;
+elseif int_size == 8 then
+get_int = get_int64;
+else
+error("");
+end
+if size_t == 4 then
+get_size_t = get_int32;
+elseif size_t == 8 then
+get_size_t = get_int64;
+else
+error("");
+end
+assert(get_string(3) == "\4\8\0","S1MPLYS3C7RED: Unsupported platform");
+end
+return decode_chunk();
+end
+local function handle_return(...)
+local c = select("#", ...)
+local t = {...}
+return c, t
+end
+local function IIllIllIlIIIIIIIIllIlIIIIlllIIIIIIl(IIllIlIIIlIlllllIIIlIIlllllIllllIlI, upvalues)
+local instructions = IIllIlIIIlIlllllIIIlIIlllllIllllIlI.instructions;
+local constants    = IIllIlIIIlIlllllIIIlIIlllllIllllIlI.constants;
+local prototypes   = IIllIlIIIlIlllllIIIlIIlllllIllllIlI.prototypes;
+
+local stack, top
+local environment
+local IP = 1;
+local vararg, vararg_size 
+
+local opcode_funcs = {
+[0]  = function(instruction)
+stack[instruction.A] = stack[instruction.B];
+end,
+[1]  = function(instruction)
+stack[instruction.A] = constants[instruction.Bx].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI;
+end,
+[2]  = function(instruction)
+stack[instruction.A] = instruction.B ~= 0
+if instruction.C ~= 0 then
+IP = IP + 1
+end
+end,
+[3]  = function(instruction)
+local stack = stack
+for i = instruction.A, instruction.B do
+stack[i] = nil
+end
+end,
+[4] = function(instruction)
+stack[instruction.A] = upvalues[instruction.B]
+end,
+[5]  = function(instruction)
+local key = constants[instruction.Bx].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI;
+stack[instruction.A] = environment[key];
+end,
+[6]  = function(instruction)
+local C = instruction.C
+local stack = stack
+C = C > 255 and constants[C-256].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI or stack[C]
+stack[instruction.A] = stack[instruction.B][C];
+end,
+[7]  = function(instruction)
+local key = constants[instruction.Bx].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI;
+environment[key] = stack[instruction.A];
+end,
+[8] = function (instruction)
+upvalues[instruction.B] = stack[instruction.A]
+end,
+[9] = function (instruction)
+local B = instruction.B;
+local C = instruction.C;
+local stack, constants = stack, constants;
+B = B > 255 and constants[B-256].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI or stack[B];
+C = C > 255 and constants[C-256].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI or stack[C];
+stack[instruction.A][B] = C
+end,
+[10] = function (instruction)
+stack[instruction.A] = {}
+end,
+[11] = function (instruction)
+local A = instruction.A
+local B = instruction.B
+local C = instruction.C
+local stack = stack
+B = stack[B]
+C = C > 255 and constants[C-256].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI or stack[C]
+stack[A+1] = B
+stack[A]   = B[C]
+end,
+[12] = function(instruction)
+local B = instruction.B;
+local C = instruction.C;
+local stack, constants = stack, constants;
+B = B > 255 and constants[B-256].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI or stack[B];
+C = C > 255 and constants[C-256].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI or stack[C];
+stack[instruction.A] = B+C;
+end,
+[13] = function(instruction)
+local B = instruction.B;
+local C = instruction.C;
+local stack, constants = stack, constants;
+B = B > 255 and constants[B-256].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI or stack[B];
+C = C > 255 and constants[C-256].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI or stack[C];
+stack[instruction.A] = B - C;
+end,
+[14] = function(instruction)
+local B = instruction.B;
+local C = instruction.C;
+local stack, constants = stack, constants;
+B = B > 255 and constants[B-256].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI or stack[B];
+C = C > 255 and constants[C-256].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI or stack[C];
+stack[instruction.A] = B * C;
+end,
+[15] = function(instruction)
+local B = instruction.B;
+local C = instruction.C;
+local stack, constants = stack, constants;
+B = B > 255 and constants[B-256].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI or stack[B];
+C = C > 255 and constants[C-256].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI or stack[C];
+stack[instruction.A] = B / C;
+end,
+[16] = function(instruction)
+local B = instruction.B;
+local C = instruction.C;
+local stack, constants = stack, constants;
+B = B > 255 and constants[B-256].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI or stack[B];
+C = C > 255 and constants[C-256].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI or stack[C];
+stack[instruction.A] = B % C;
+end,
+[17] = function(instruction)
+local B = instruction.B;
+local C = instruction.C;
+local stack, constants = stack, constants;
+B = B > 255 and constants[B-256].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI or stack[B];
+C = C > 255 and constants[C-256].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI or stack[C];
+stack[instruction.A] = B ^ C;
+end,
+[18] = function(instruction)
+stack[instruction.A] = -stack[instruction.B]
+end,
+[19] = function(instruction)
+stack[instruction.A] = not stack[instruction.B]
+end,
+[20] = function(instruction)
+stack[instruction.A] = #stack[instruction.B]
+end,
+[21] = function(instruction)
+local B = instruction.B
+local result = stack[B]
+for i = B+1, instruction.C do
+result = result .. stack[i] 
+end
+stack[instruction.A] = result
+end,
+[22] = function(instruction)
+IP = IP + instruction.sBx
+end,
+[23] = function(instruction)
+local A = instruction.A
+local B = instruction.B
+local C = instruction.C
+local stack, constants = stack, constants
+A = A ~= 0
+B = B > 255 and constants[B-256].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI or stack[B]
+C = C > 255 and constants[C-256].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI or stack[C]
+if (B == C) ~= A then
+IP = IP + 1
+end
+end,
+[24] = function(instruction)
+local A = instruction.A
+local B = instruction.B
+local C = instruction.C
+local stack, constants = stack, constants
+A = A ~= 0
+B = B > 255 and constants[B-256].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI or stack[B]
+C = C > 255 and constants[C-256].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI or stack[C]
+if (B < C) ~= A then
+IP = IP + 1
+end
+end,
+[25] = function(instruction)
+local A = instruction.A
+local B = instruction.B
+local C = instruction.C
+local stack, constants = stack, constants
+A = A ~= 0
+B = B > 255 and constants[B-256].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI or stack[B]
+C = C > 255 and constants[C-256].llIIlIlIIllllIlIlIlIIlIlIlIllllIllI or stack[C]
+if (B <= C) ~= A then
+IP = IP + 1
+end
+end,
+[26] = function(instruction)
+if stack[instruction.A] == (instruction.C ~= 0) then
+IP = IP + 1
+end
+end,
+[27] = function(instruction)
+local stack = stack
+local B = stack[instruction.B]
+if B == (instruction.C ~= 0) then
+IP = IP + 1
+else
+stack[instruction.A] = B
+end
+end,
+[28] = function(instruction)
+local A = instruction.A;
+local B = instruction.B;
+local C = instruction.C;
+local stack = stack;
+local args, results;
+local limit, loop
+args = {};
+if B ~= 1 then
+if B ~= 0 then
+limit = A+B-1;
+else
+limit = top
+end
+loop = 0
+for i = A+1, limit do
+loop = loop + 1
+args[loop] = stack[i];
+end
+limit, results = handle_return(stack[A](unpack(args, 1, limit-A)))
+else
+limit, results = handle_return(stack[A]())
+end
+top = A - 1
+if C ~= 1 then
+if C ~= 0 then
+limit = A+C-2;
+else
+limit = limit+A
+end
+loop = 0;
+for i = A, limit do
+loop = loop + 1;
+stack[i] = results[loop];
+end
+end
+end,
+[29] = function (instruction)
+local A = instruction.A;
+local B = instruction.B;
+local C = instruction.C;
+local stack = stack;
+local args, results;
+local top, limit, loop = top
+args = {};
+if B ~= 1 then
+if B ~= 0 then
+limit = A+B-1;
+else
+limit = top
+end
+loop = 0
+for i = A+1, limit do
+loop = loop + 1
+args[#args+1] = stack[i];
+end
+results = {stack[A](unpack(args, 1, limit-A))};
+else
+results = {stack[A]()};
+end
+return true, results
+end,
+[30] = function(instruction)
+local A = instruction.A;
+local B = instruction.B;
+local stack = stack;
+local limit;
+local loop, IlllIlIIIIIlIIIlIllIIIIlIllIllIlIlI;
+if B == 1 then
+return true;
+end
+if B == 0 then
+limit = top
+else
+limit = A + B - 2;
+end
+IlllIlIIIIIlIIIlIllIIIIlIllIllIlIlI = {};
+local loop = 0
+for i = A, limit do
+loop = loop + 1
+IlllIlIIIIIlIIIlIllIIIIlIllIllIlIlI[loop] = stack[i];
+end
+return true, IlllIlIIIIIlIIIlIllIIIIlIllIllIlIlI;
+end,
+[31] = function(instruction)
+local A = instruction.A
+local stack = stack
+local step = stack[A+2]
+local index = stack[A] + step 
+stack[A] = index
+if step > 0 then
+if index <= stack[A+1] then
+IP = IP + instruction.sBx
+stack[A+3] = index
+end
+else
+if index >= stack[A+1] then
+IP = IP + instruction.sBx
+stack[A+3] = index
+end
+end
+end,
+[32] = function(instruction)
+local A = instruction.A
+local stack = stack
+stack[A] = stack[A] - stack[A+2]
+IP = IP + instruction.sBx 
+end,
+[33] = function(instruction)
+local A = instruction.A
+local B = instruction.B
+local C = instruction.C
+local stack = stack
+local offset = A+2
+local result = {stack[A](stack[A+1], stack[A+2])}
+for i = 1, C do
+stack[offset+i] = result[i]
+end
+if stack[A+3] ~= nil then
+stack[A+2] = stack[A+3]
+else
+IP = IP + 1
+end
+end,
+[34] = function(instruction)
+local A = instruction.A
+local B = instruction.B
+local C = instruction.C
+local stack = stack
+if C == 0 then
+error("NYI: extended SETLIST")
+else
+local offset = (C - 1) * 50
+local t = stack[A]
+if B == 0 then
+B = top
+end
+for i = 1, B do
+t[offset+i] = stack[A+i]
+end
+end
+end,
+[35] = function(instruction)
+io.stderr:write("NYI: CLOSE")
+io.stderr:flush()
+end,
+[36] = function(instruction)
+local proto = prototypes[instruction.Bx]
+local instructions = instructions
+local stack = stack
+local indices = {}
+local new_upvals = setmetatable({},
+{
+__index = function(t, k)
+local upval = indices[k]
+return upval.segment[upval.offset]
+end,
+__newindex = function(t, k, v)
+local upval = indices[k]
+upval.segment[upval.offset] = v
+end
+}
+)
+for i = 1, proto.upvalues do
+local movement = instructions[IP]
+if movement.opcode == 0 then
+indices[i-1] = {segment = stack, offset = movement.B}
+elseif instructions[IP].opcode == 4 then
+indices[i-1] = {segment = upvalues, offset = movement.B}
+end
+IP = IP + 1
+end
+local _, func = IIllIllIlIIIIIIIIllIlIIIIlllIIIIIIl(proto, new_upvals)
+stack[instruction.A] = func
+end,
+[37] = function(instruction)
+local A = instruction.A
+local B = instruction.B
+local stack, vararg = stack, vararg
+
+for i = A, A + (B > 0 and B - 1 or vararg_size) do
+stack[i] = vararg[i - A]
+end
+end,
+}
+local function loop()
+local instructions = instructions
+local instruction, a, b
+while true do
+instruction = instructions[IP];
+IP = IP + 1
+a, b = opcode_funcs[instruction.opcode](instruction);
+if a then
+return b;
+end
+end
+end
+local IIIIIIIlIlIIlllIIlIlIIIllIIlIIIlIlI = {
+get_stack = function()
+return stack;
+end;
+get_IP = function()
+return IP;
+end
+};
+local function func(...)
+local local_stack = {};
+local ghost_stack = {};
+top = -1
+stack = setmetatable(local_stack, {
+__index = ghost_stack;
+__newindex = function(t, k, v)
+if k > top and v then
+top = k
+end
+ghost_stack[k] = v
+end;
+})
+local args = {...};
+vararg = {}
+vararg_size = select("#", ...) - 1
+for i = 0, vararg_size do
+local_stack[i] = args[i+1];
+vararg[i] = args[i+1]
+end
+environment = getfenv();
+IP = 1;
+local thread = coroutine.create(loop)
+local a, b = coroutine.resume(thread)
+if a then
+if b then
+return unpack(b);
+end
+return;
+else
+local name = IIllIlIIIlIlllllIIIlIIlllllIllllIlI.name;
+local line = IIllIlIIIlIlllllIIIlIIlllllIllllIlI.debug.lines[IP];
+local err  = b:gsub("(.-:)", "");
+local IlllIlIIIIIlIIIlIllIIIIlIllIllIlIlI = "";
+IlllIlIIIIIlIIIlIllIIIIlIllIllIlIlI = IlllIlIIIIIlIIIlIllIIIIlIllIllIlIlI .. (name and name .. ":" or "");
+IlllIlIIIIIlIIIlIllIIIIlIllIllIlIlI = IlllIlIIIIIlIIIlIllIIIIlIllIllIlIlI .. (line and line .. ":" or "");
+IlllIlIIIIIlIIIlIllIIIIlIllIllIlIlI = IlllIlIIIIIlIIIlIllIIIIlIllIllIlIlI .. b
+error(IlllIlIIIIIlIIIlIllIIIIlIllIllIlIlI, 0);
+end
+end
+return IIIIIIIlIlIIlllIIlIlIIIllIIlIIIlIlI, func;
+end
+local lIlIlIlIlIllIIIllIlIIlllIIlllIlIIII = {
+IlIIIIIIlIllIIlIlIIIllIllIIlllIllll = function(IlIlllllllIllIlIllIlIlllIIIIIlIIlll)
+local IIllIlIIIlIlllllIIIlIIlllllIllllIlI = lIlIIIlllIlIIIIlIIIllIlIIIIIlIlIlll(IlIlllllllIllIlIllIlIlllIIIIIlIIlll);
+local _, func = IIllIllIlIIIIIIIIllIlIIIIlllIIIIIIl(IIllIlIIIlIlllllIIIlIIlllllIllllIlI);
+return func;
+end;
+utils = {
+lIlIIIlllIlIIIIlIIIllIlIIIIIlIlIlll = lIlIIIlllIlIIIIlIIIllIlIIIIIlIlIlll;
+IIllIllIlIIIIIIIIllIlIIIIlllIIIIIIl = IIllIllIlIIIIIIIIllIlIIIIlllIIIIIIl;
+IlllIIIllIlllIlIIIllllIIllllIIllllI = function(IlIlllllllIllIlIllIlIlllIIIIIlIIlll)
+local IIllIlIIIlIlllllIIIlIIlllllIllllIlI = lIlIIIlllIlIIIIlIIIllIlIIIIIlIlIlll(IlIlllllllIllIlIllIlIlllIIIIIlIIlll)
+return IIllIllIlIIIIIIIIllIlIIIIlllIIIIIIl(IIllIlIIIlIlllllIIIlIIlllllIllllIlI);
+end;
+};
+}
+lIlIlIlIlIllIIIllIlIIlllIIlllIlIIII.IlIIIIIIlIllIIlIlIIIllIllIIlllIllll(table.concat(llIIlIlIIllllIlIlIlIIlIlIlIllllIllI, [[]]))()
